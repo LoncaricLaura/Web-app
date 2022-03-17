@@ -15,14 +15,19 @@ const routes = [
         component: Card,
     },
     {
-        path: '/CommitDetails',
+        path: '/CommitDetails/:id',
         name: 'CommitDetails',
         component: CommitDetails,
+        props: true,
     },
 
 ]
+
+
+
 const router = createRouter({
     history: createWebHistory(),
     routes,
 })
 export default router
+

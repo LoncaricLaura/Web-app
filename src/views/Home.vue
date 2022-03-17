@@ -1,7 +1,7 @@
 <template>
     <div class="pt-10">
         <p class="text-[#474747] text-[25px] font-bold ">SHA commits</p>
-            <Card v-for="repo in repos" :key="repo.id" :sha="repo.sha" :image="repo.author.avatar_url" :name="repo.author.name" />
+            <Card v-for="repo in repos" :key="repo.id" :sha="repo.sha" :image="repo.author.avatar_url" :name="repo.commit.author.name" :email="repo.commit.committer.email" :date="repo.commit.committer.date" :msg="repo.commit.message" />
     </div>
 </template>
 

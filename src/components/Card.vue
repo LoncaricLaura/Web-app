@@ -4,7 +4,9 @@
             <div div class="h-48">
                 <div class="grid justify-items-center py-7">
                     <img class="rounded-full h-[60px] w-[60px]" :src="image">
-                    <h3 class="py-7">{{ sha }}</h3>
+                    <router-link :to="'/CommitDetails'">
+                    <p class="py-7  hover:text-[16px] hover:font-bold hover:text-zinc-700">{{ sha }}</p>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -13,6 +15,7 @@
 </template>
 
 <script>
+import CommitDetails from '/src/views/CommitDetails.vue'
 
 export default {
     props: ["id", "sha", "image"],

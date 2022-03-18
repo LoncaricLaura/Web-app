@@ -34,23 +34,12 @@ import axios from 'axios'
 export default {
     name: "CommitDetails",
     props: ["id", "name", "email", "date", "msg", "image"],
-  /*  data() {
-        return {
-            repos: [],
-        }
-    }, */
     methods: {
         goBack() {
             return this.$router.go(-1);
         }
     },
-     mounted() {
-        axios.get('https://api.github.com/repos/vuejs/vue/commits/:id')
-        .then(response => {
-            this.repos = response.data;
-            console.log(response.data);
-        })
-    }, 
+
 }
 
 </script>

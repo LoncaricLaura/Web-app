@@ -7,12 +7,12 @@
             </button>
         </div>
  
-    <div class="py-16 px-[30px] grid justify-items-center ">
-        <div class="grid rounded-3xl overflow-hidden shadow-2xl w-[400px] md:w-[1000px]">
+    <div class="py-16 px-[30px] grid justify-items-center">
+        <div class="grid rounded-3xl overflow-hidden shadow-2xl w-[400px] md:w-[900px]">
             <div div class="md:h-[330px] ">
                 <div class="grid grid-cols-1 justify-items-center py-7">
                     <img class=" rounded-full h-[60px] w-[60px]" :src="image">
-                    <p class="pt-7 text-[16px] font-bold hover:text-zinc-700">{{ name }} <br> {{ email }}</p>    
+                    <p class="pt-7 text-[16px] font-bold hover:text-zinc-700">{{ name }} <br>{{ email }}</p>    
                 </div>
                 <div class="grid grid-rows-2 md:grid-cols-2 justify-center md:px-16 text-left mx-[20px] md:space-x-28">
                     <p class="mb-[10px]"><b>Commit message:</b><br> {{ msg }}</p>
@@ -29,7 +29,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 
 export default {
     name: "CommitDetails",

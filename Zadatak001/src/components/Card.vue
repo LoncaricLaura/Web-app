@@ -1,6 +1,6 @@
 <template>
     <div class="py-16 px-[30px] grid justify-items-center ">
-        <div class="grid rounded-3xl overflow-hidden shadow-2xl w-[400px] ">
+        <div class="grid rounded-3xl overflow-hidden shadow-2xl w-[400px]">
             <div div class="h-48">
                 <div class="grid grid-cols-1 justify-items-center py-7">
                     <img class=" rounded-full h-[60px] w-[60px]" :src="image">

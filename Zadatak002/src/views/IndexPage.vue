@@ -22,7 +22,7 @@
         </div>
 
         <table
-            class="grid justify-items-center mx-auto border-solid border-2 border-slate-400 w-full"
+            class="grid justify-items-center mx-auto border-solid border-2 border-slate-400 rounded-md w-full"
         >
             <thead
                 class="grid content-center w-full border-b-2 border-slate-300 text-[20px] font-bold bg-slate-200 h-16"
@@ -36,8 +36,8 @@
                     <th class="">Probability c</th>
                 </tr>
             </thead>
-            <tbody class="grid content-center h-32">
-                <tr class="grid grid-cols-6 gap-[50px]">
+            <tbody class="grid content-center h-32 px-8">
+                <tr class="grid grid-cols-6 gap-[100px]">
                     <td>
                         <div v-for="age in ages" :key="age.name">
                             {{ age.name }}
@@ -98,11 +98,9 @@ export default {
             console.log(promise3.data);
 
             await axios.all([promise1, promise2, promise3])
-            .then((res) => {
                 this.ages = promise1,
                 this.genders = promise2,
                 this.countries = promise3.data
-            })
 
            /* Promise.all([
                 fetch('https://api.agify.io?name=' + this.name),
